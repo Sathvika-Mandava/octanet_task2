@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project To-Do List</title>
+</head>
+<body>
+    <h1>Project To-Do List</h1>
+    <div class="task-form">
+        <input type="text" id="taskName" placeholder="Task Name">
+        <input type="date" id="taskDeadline">
+        <select id="taskPriority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <input type="text" id="taskLabels" placeholder="Labels">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="task-list" id="taskList"></div>
+</body>
+<script src="script.js"></script>
+</html>
